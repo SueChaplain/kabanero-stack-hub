@@ -1,0 +1,100 @@
+apiVersion: v2
+stacks:
+- default-template: scaffold
+  description: LoopBack 4 API Framework for Node.js
+  id: nodejs-loopback
+  image: ""
+  language: nodejs
+  license: Apache-2.0
+  maintainers:
+  - email: enjoyjava@gmail.com
+    github-id: raymondfeng
+    name: Raymond Feng
+  name: LoopBack 4
+  requirements:
+    appsody-version: '>= 0.2.7'
+    docker-version: '>= 17.09.0'
+  src: ""
+  templates:
+  - id: scaffold
+    url: https://github.com/appsody/stacks/releases/download/nodejs-loopback-v0.2.2/incubator.nodejs-loopback.v0.2.2.templates.scaffold.tar.gz
+  version: 0.2.2
+- default-template: default
+  description: Spring Boot using OpenJ9 and Maven
+  id: java-spring-boot2
+  image: ""
+  language: java
+  license: Apache-2.0
+  maintainers:
+  - email: schnabel@us.ibm.com
+    github-id: ebullient
+    name: Erin Schnabel
+  - email: ozzy@ca.ibm.com
+    github-id: bardweller
+    name: Ozzy Osborne
+  - email: rtrotter@us.ibm.com
+    github-id: richard-trotter
+    name: Richard Trotter
+  - email: hyayi@us.ibm.com
+    github-id: yharish991
+    name: Harish Yayi
+  name: Spring Boot®
+  requirements:
+    appsody-version: '>= 0.5.0'
+    docker-version: '>= 17.09.0'
+  src: ""
+  templates:
+  - id: default
+    url: https://github.com/appsody/stacks/releases/download/java-spring-boot2-v0.3.26/incubator.java-spring-boot2.v0.3.26.templates.default.tar.gz
+  - id: kotlin
+    url: https://github.com/appsody/stacks/releases/download/java-spring-boot2-v0.3.26/incubator.java-spring-boot2.v0.3.26.templates.kotlin.tar.gz
+  version: 0.3.26
+- default-template: default
+  description: Open Liberty & OpenJ9 using Maven
+  id: java-openliberty
+  image: docker.io/appsody/java-openliberty:0.2.2
+  language: java
+  license: Apache-2.0
+  maintainers:
+  - email: andrasak@us.ibm.com
+    github-id: uberskigeek
+    name: Mike Andrasak
+  - email: ajmauer@us.ibm.com
+    github-id: ajm01
+    name: Andy Mauer
+  - email: skurz@us.ibm.com
+    github-id: ""
+    name: Scott Kurz
+  - email: awisniew@us.ibm.com
+    github-id: ""
+    name: Adam Wisniewski
+  name: Open Liberty
+  requirements:
+    appsody-version: '>= 0.5.0'
+    docker-version: '>= 17.09.0'
+  src: https://github.com/appsody/stacks/releases/download/java-openliberty-v0.2.2/incubator.java-openliberty.v0.2.2.source.tar.gz
+  templates:
+  - id: default
+    url: https://github.com/appsody/stacks/releases/download/java-openliberty-v0.2.2/incubator.java-openliberty.v0.2.2.templates.default.tar.gz
+  version: 0.2.2
+- default-template: simple
+  description: Express web framework for Node.js
+  id: nodejs-express
+  image: docker.io/appsody/nodejs-express:0.4.3
+  language: nodejs
+  license: Apache-2.0
+  maintainers:
+  - email: vieuxtech@gmail.com
+    github-id: sam-github
+    name: Sam Roberts
+  name: Node.js Express
+  requirements:
+    appsody-version: '>= 0.2.7'
+    docker-version: '>= 17.09.0'
+  src: https://github.com/appsody/stacks/releases/download/nodejs-express-v0.4.3/incubator.nodejs-express.v0.4.3.source.tar.gz
+  templates:
+  - id: simple
+    url: https://github.com/appsody/stacks/releases/download/nodejs-express-v0.4.3/incubator.nodejs-express.v0.4.3.templates.simple.tar.gz
+  - id: scaffold
+    url: https://github.com/appsody/stacks/releases/download/nodejs-express-v0.4.3/incubator.nodejs-express.v0.4.3.templates.scaffold.tar.gz
+  version: 0.4.3
